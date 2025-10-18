@@ -1,14 +1,14 @@
 from langchain_huggingface import ChatHuggingFace,HuggingFaceEndpoint
 from dotenv import load_dotenv
-import os
 
 load_dotenv()
 
-llm = HuggingFaceEndpoint(
-    repo_id='TinyLlama/TinyLlama-1.1B-Chat-v1.0',
-    task='text-generation')
+llm = HuggingFaceEndpoint(repo_id='HuggingFaceH4/zephyr-7b-beta',
+                          task="text-generation",
+                          max_new_tokens=10)
+                    
+models=ChatHuggingFace(llm=llm)
 
-model = ChatHuggingFace(llm=llm)
+res = models.invoke('what is the capital of india')
 
-res = model.invoke('what is the capital of india')
 print(res.content)
