@@ -26,6 +26,7 @@ scores=cosine_similarity([query_embedding],doc_embedding)[0]
 print(scores)
 
 res= sorted(list(enumerate(scores)),key=lambda x:x[1])
+print(res)
 index,score = res[-1]
 
 print(query)

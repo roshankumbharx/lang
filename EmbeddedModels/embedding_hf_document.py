@@ -6,4 +6,4 @@ document = ['who is america','who is sacha baron cohen','Techmology,aight!Respek
 
 vector = embedding.embed_documents(document)
 
-print(str(vector))
+print(vector)
