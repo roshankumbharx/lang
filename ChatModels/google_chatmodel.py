@@ -6,5 +6,4 @@ load_dotenv()
 model = ChatGoogleGenerativeAI(model='gemini-2.5-flash',temperature=0)
 
 result =  model.invoke('Write me a poem like emily dickinson')
-print(result)
-print(type(result))
+print(result.content)

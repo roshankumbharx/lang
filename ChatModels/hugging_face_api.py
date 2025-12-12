@@ -5,7 +5,7 @@ load_dotenv()
 
 llm = HuggingFaceEndpoint(repo_id='openai/gpt-oss-120b',
                           task="text-generation",
-                          max_new_tokens=1)
+                          max_new_tokens=1,temperature=0.7)
                     
 models=ChatHuggingFace(llm=llm)
 
