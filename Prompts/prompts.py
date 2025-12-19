@@ -1,14 +1,13 @@
-from langchain_huggingface import ChatHuggingFace,HuggingFaceEndpoint
+from langchain_huggingface import HuggingFaceEndpoint
 from dotenv import load_dotenv
 
 load_dotenv()
 
-llm=HuggingFaceEndpoint(repo_id='deepseek-ai/DeepSeek-R1',task='text-generation')
+llm = HuggingFaceEndpoint(
+    repo_id="HuggingFaceH4/zephyr-7b-beta",
+    task="text-generation"
+)
 
-model = ChatHuggingFace(llm=llm)
+res = llm.invoke("What is ai")
 
-print('Enter Input:')
-userInput=input()
-res = model.invoke(userInput)
-
-print(res.content)
+print(res)

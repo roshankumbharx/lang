@@ -3,12 +3,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-llm = HuggingFaceEndpoint(repo_id='openai/gpt-oss-120b',
+llm = HuggingFaceEndpoint(repo_id='HuggingFaceH4/zephyr-7b-beta',
                           task="text-generation",
-                          max_new_tokens=1,temperature=0.7)
+                          temperature=0.7)
                     
 models=ChatHuggingFace(llm=llm)
 
-res = models.invoke('write me a poem like emily dickinson')
+res = models.invoke('what is hugging face in short')
 
 print(res.content)
