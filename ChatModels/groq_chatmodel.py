@@ -5,6 +5,6 @@ load_dotenv()
 
 model = ChatGroq(model='llama-3.1-8b-instant')
 
-res = model.invoke('what is black hole')
+res = model.invoke('who won the nobel prize in 2025 in physics')
 
-print(res)
+print(res.content)
