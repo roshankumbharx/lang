@@ -53,3 +53,5 @@ chain = classifier_chain | branch_chain
 res = chain.invoke({'feedback':'This watch did not live up to my expectations'})
 
 print(res)
+
+chain.get_graph().print_ascii()

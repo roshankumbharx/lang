@@ -3,8 +3,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-model = ChatGroq(model='llama-3.1-8b-instant')
+# model = ChatGroq(model='llama-3.1-8b-instant')
+model = ChatGroq(model='openai/gpt-oss-120b')
 
-res = model.invoke('who won the nobel prize in 2025 in physics')
+res = model.invoke('who owns twitter')
 
 print(res.content)
