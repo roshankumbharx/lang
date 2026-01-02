@@ -4,18 +4,15 @@ langchain-community
 langchain-ollama
 langchain-core
 
-
 langchain-openai
 openai
 
 langchain-anthropic
 
-
 langchain-google-genai
 google-generativeai
 
 langchain-groq
-
 
 
 langchain-huggingface
@@ -25,6 +22,7 @@ huggingface-hub
 
 python-dotenv
 
-
 numpy
 scikit-learn
+
+pypdf
