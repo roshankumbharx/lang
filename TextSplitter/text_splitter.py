@@ -9,7 +9,7 @@ docs = loader.lazy_load()
 splitter=CharacterTextSplitter(
     chunk_size = 100,
     chunk_overlap=0,  # for rag based applications --> 10-20 % of chunk_size
-    separator=''
+    separator=''      # if separator not provided then you might get the whole document instead of the chunk
 )
  
 
