@@ -19,6 +19,7 @@ langchain-huggingface
 transformers
 huggingface-hub
 
+chromadb
 
 python-dotenv
 

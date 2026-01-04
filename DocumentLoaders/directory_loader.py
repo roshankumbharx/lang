@@ -14,4 +14,4 @@ docs = loader.lazy_load()
 
 
 for document in docs:
-    print(document.metadata)
+    print(document)

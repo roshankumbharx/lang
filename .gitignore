@@ -2,3 +2,4 @@ myenv
 .env
 
 data
+chroma_db
