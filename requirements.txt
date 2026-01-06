@@ -28,3 +28,6 @@ scikit-learn
 
 pypdf
 beautifulsoup4
+
+wiikipedia
+faiss-cpu
