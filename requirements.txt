@@ -31,3 +31,5 @@ beautifulsoup4
 
 wiikipedia
 faiss-cpu
+
+youtube-transcript-api
